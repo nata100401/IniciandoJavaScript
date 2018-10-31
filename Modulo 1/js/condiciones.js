@@ -53,7 +53,7 @@ if(edad>=70){
 
 
 
-var edades=prompt("Ingrese su edad");
+/* var edades=prompt("Ingrese su edad");
 
 function calcularEdad(ed)
 {
@@ -85,4 +85,65 @@ calcularEdad(edades);
 calcularEdad(23);
 calcularEdad(89);
 calcularEdad(15);
-calcularEdad(67);
+calcularEdad(67); */
+
+
+//**Operadores de comparacion */
+/* var a=5;
+var b=5;
+if (a==b){
+    console.log("a y b son iguales");
+}
+
+if (a==b){
+    console.log("a y b son iguales en tipo y en valor");
+}
+
+else{
+    console.log("a y b no son igules ni en tipo en valor")
+}
+
+//**Operador ternario */
+/* var aux=0;
+if (a==b){
+    aux=5;
+    console.log(aux);
+}
+
+else{
+    aux=10;
+    console.log(aux);
+}
+var result= a==b?  10 : 20;    //**Operador tenario es el signo de interrogacion */
+//**Primero va lo vedadero y despues de los puntos va lo falso */
+// console.log(result); */ */
+
+// var year=prompt("Introduzca un año");
+// var result= year != 2018? true : false;
+
+//**Switch:ideal para menus y escojer contenido */
+var day=prompt("Introduzac un dia de la semana");
+function setDay(day){
+
+    switch (day){
+        case "sabado":
+        console.log("Voy a ir al cine");
+        break;
+    
+        case "domingo":
+        console.log("Voy a hacer deporte");
+        break;
+    
+        case "lunes":
+        console.log("Voy a trabajar");
+        break;
+    
+        default: 
+        console.log("No es un dia valido");
+
+    }
+}
+setDay(day);
+setDay("domingo");
+setDay(13);
+
