@@ -25,9 +25,15 @@
 
 var num=prompt("Ingresar un numero");
 var sum=0;
-
 while (num!=0) {
     sum=sum+num;
     num=prompt("Ingrese un numero");
 }
 console.log("La sumatoria de todos los numeros es: ",sum);
+
+
+var sum=0;
+debugger;
+do {
+    var num=prompt("Ingrese el numero")
+}

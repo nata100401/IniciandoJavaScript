@@ -77,10 +77,56 @@
 //     alert("Es un numero impar");
 // }
 
-var usu=(prompt("Ingrese su usuario"));
-var contra=parseInt(prompt("Ingrese su contraseña"));
+// LOGIN
+// var password="12345";
+// var user="dayana";
+// var name=prompt("Ingrese Usuario");
+// var pass=prompt("Ingrese Contraseña");
+// var count=0;
+// function loginuser(name,pass){
+//     while(name!=user && pass!=password){
+//         alert("Credenciales incorrectas,intentelo de nuevo");
+//         var name=prompt("Ingrese Usuario");
+//         var pass=prompt("Ingrese Contraseña");
+//         count++;
+//         if(count>=5){
+//             alert("Su usuario ha sido bloqueado");
+//             break;
+//         }
+//     }
+// }
+
+// loginuser(name,pass);
+// if(count>=5){
+//     var conf=confirm("Desea cambiar su contraseña");
+//     if(conf==true){
+//         var name=prompt("Ingrese usuario");
+//         var pass2=prcept("Ingrese nueva contraseñs")
+//         password=pass2;
+//         loginuser(name,pass2);
+//     }
+// }
 
 
 
-
-alert("Bienvenid@  "   +usu)
+  function generarTablas() 
+{
+ var numTablas=document.getElementById('limite').value; 
+ document.writeln('<table>');
+ for (var i=1; i<=12; i++) 
+ {
+   document.writeln('<tr>');
+  for (var j=1; j<=numTablas; j++) 
+  {
+   document.writeln('<td>');
+   document.writeln(j + " * " + i + " = "+i*j);
+   document.writeln('</td>');
+   document.writeln('<td>     </td>');
+  }
+   document.writeln('</tr>');
+ }
+  document.writeln('</table>');
+}
+ document.writeln('¿Hasta que numero de tabla quieres generar?'); 
+ document.writeln('<input type="text" name="limite", id="limite" />'); 
+ document.writeln('<input type="button" name="btn_obtener" id="btn_obtener" value="Obtener Tablas" onclick="generarTablas()"/>'); 

@@ -75,5 +75,5 @@ alert ("lo que desee",String(numero1)+String(numero2));
 //** prompt*/
 var modelo=prompt("el modelo del carro es", 2018);
 //**conf */
-var conf=confirm("Desea salir dfe la aplicacion");
+var conf=confirm("Desea salir de la aplicacion");
 console.log("confirmacion",conf);
